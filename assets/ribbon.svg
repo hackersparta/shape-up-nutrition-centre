@@ -1,0 +1,10 @@
+<svg width="1440" height="96" viewBox="0 0 1440 96" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+  <path d="M0 48C120 8 240 88 360 48C480 8 600 88 720 48C840 8 960 88 1080 48C1200 8 1320 88 1440 48V96H0V48Z" fill="url(#ribbonGrad)"/>
+  <defs>
+    <linearGradient id="ribbonGrad" x1="0" y1="0" x2="1440" y2="0" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#E3AE1F"/>
+      <stop offset="50%" stop-color="#C81C6E"/>
+      <stop offset="100%" stop-color="#8A1E3B"/>
+    </linearGradient>
+  </defs>
+</svg>
