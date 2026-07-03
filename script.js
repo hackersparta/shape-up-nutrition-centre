@@ -14,6 +14,18 @@ if (leadForm) {
     }
 
     const url = `https://wa.me/919840538821?text=${encodeURIComponent(message)}`;
+    if (typeof fbq === 'function') {
+      fbq('track', 'Lead', { content_name: 'Free Body Composition Analysis' });
+    }
     window.open(url, '_blank', 'noopener');
   });
 }
+
+// Track WhatsApp / call clicks as Contact events
+document.querySelectorAll('a[href^="tel:"], a[href^="https://wa.me/"]').forEach(function (el) {
+  el.addEventListener('click', function () {
+    if (typeof fbq === 'function') {
+      fbq('track', 'Contact');
+    }
+  });
+});
